@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplexed Socket Demo</title>
+    <script src="https://unpkg.com/rxjs/bundles/Rx.js"></script>
+    <style>
+      body {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body style="height: 100%">
+    <div style="position: absolute;
+      top: 50px; left: 50px;
+      background: white;
+      padding: 10px;">
+      <label style="margin-right: 10px">
+        <input class="color-select" type="checkbox" name="red" value="red"/>
+        red
+      </label>
+      <label style="margin-right: 10px">
+        <input class="color-select" type="checkbox" name="green" value="green"/>
+        green
+      </label>
+      <label style="margin-right: 10px">
+        <input class="color-select" type="checkbox" name="blue" value="blue"/>
+        blue
+      </label>
+    </div>
+    <canvas id="display" width="1000" height="1000"></canvas>
+    <script src="demo.js"></script>
+  </body>
+</html>
