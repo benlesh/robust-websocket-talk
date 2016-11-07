@@ -11,7 +11,7 @@ let i = 1;
 wss.on('connection', ws => {
   const subscriptions = {};
   const id = i++;
-  console.log(`${id}: connection`);
+  console.log(`${id} OPEN`);
 
   ws.on('message', message => {
     console.log(`${id} <-`, message);
